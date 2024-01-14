@@ -104,6 +104,12 @@ main {
     font-size: 20px;
 }
 
+#project-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 #contact-content {
     height: 100%;
     margin-top: 2%;
