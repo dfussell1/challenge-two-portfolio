@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General HTML page formatting and styling */
+
+body {
+    font-family: sans-serif;
+    line-height: 2;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -5,23 +18,6 @@ header {
     padding: 0.5% 1%;
     background-color: rgb(46, 46, 46);
     color: white;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    line-height: 2;
-}
-
-
-h1 {
-    font-size: 200%;
-}
-
-h2 {
-    padding: 0.5%;
-    font-size: 225%;
-    text-align: right;
 }
 
 nav ul {
@@ -37,6 +33,31 @@ nav a {
     text-decoration: underline;
 }
 
+h1 {
+    font-size: 200%;
+}
+
+h2 {
+    padding: 0.5%;
+    font-size: 225%;
+    text-align: right;
+}
+
+.section-header {
+    width: 22.5%; 
+    margin-right: 20px;
+}
+
+.information {
+    width: 72.5%;
+}
+
+.vertical {
+    border-right: 6px solid black;
+    margin-right: 5px;
+    height: 100%;
+}
+
 #webpage-banner {
     display: flex;
     width: 100%;
@@ -46,22 +67,61 @@ nav a {
 
 main {
     display: flex;
-    width: 100%;
     flex-direction: column;
+    height: 100vh;
+    width: 100%;
 }
 
 .main-content {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
-.about-me-content {
-    width: 75%;
+/* Formatting and styling for content inside the main body */
+
+#about-me {
+    height: 35%;
+    margin-top: 5px;
+}
+
+#projects {
+    height: 125%;
+    margin-top: 5px;
+}
+
+#contact {
+    height: 25%;
+    margin-top: 5px;
+}
+
+#about-me-content {
+    height: 50%;
     padding: 1%;
 }
 
-/* .vertical {
-    border-right: solid black;
-    margin-right: 5px;
-    height: 100px;
-} */
+#about-me-content p {
+    font-size: 20px;
+}
+
+#contact-content {
+    height: 100%;
+    margin-top: 2%;
+}
+
+#contact-content ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: x-large;
+}
+
+#contact-content a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+ul {
+    list-style: none;
+}
